@@ -2,26 +2,35 @@
 
 body{
     font-family: 'Teko', sans-serif;
-    margin: 10px;
-}
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: fixed;
-    top: 0;
-    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 main{
     margin-top: 100px;
 }
 
+header{
+    display: inline-flex;
+    width: 100vw;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+#box-logo{
+    display: inline-flex;
+    align-items: center;
+}
+
+#header-img{
+    width: 100px;
+    height: 100px;
+}
+
 #box-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -35,16 +44,6 @@ a{
     color: black;
 }
 
-#header-img{
-    width: 100px;
-    height: 100px;
-}
-
-#judul{
-    margin-top: 30px;
-    margin-right: 600px;
-}
-
 form{
     text-align: center;
 }
@@ -54,7 +53,7 @@ form{
 }
 
 #email{
-    width: 300px;
+    width: 40vw;
     height: 30px;
     border-radius: 5px;
     border-width: 1px;
@@ -137,14 +136,42 @@ footer{
     text-align: end;
 }
 
-@media only screen and (max-width: 800px) {
-    #judul{
-        margin-right: 100px;
-    }
-  }
+#video{
+    width: 500px;
+    height: 300px;
+}
 
-@media only screen and (max-width: 600px) {
-    #judul{
-        margin-right: 0px;
+@media only screen and (max-width: 800px) {
+    main{
+        margin-top: 130px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link{
+        font-size: 14px;
+        padding: 0px 30px;
+    }
+
+    #video{
+        width: 80%;
+        height: 50%;
+    }
+
+    #about{
+        flex-direction: column;
+    }
+
+    #features{
+        font-size: 14px;
+        width: 80vw;
+    }
+
+    #email{
+        width: 80vw;
     }
   }
